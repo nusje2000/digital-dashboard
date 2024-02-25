@@ -3,6 +3,7 @@
   "pipeline": {
     "build": {},
     "test": {},
+    "test:e2e": {},
     "lint": {},
     "lint:fix": {},
     "prettier": {},
