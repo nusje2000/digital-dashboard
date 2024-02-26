@@ -6,9 +6,6 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "moduleResolution": "node",
-    "allowJs": true,
-    "declaration": false
+    }
   }
 }
