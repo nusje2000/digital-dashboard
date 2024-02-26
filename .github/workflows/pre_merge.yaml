@@ -9,32 +9,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: 'actions/checkout@v2'
-      - uses: oven-sh/setup-bun@v1
       - name: 'Install Dependencies'
-        run: bun install --frozen-lockfile
+        run: npm ci
       - name: 'Run Linter'
-        run: bun run lint
+        run: npm run lint
   prettier:
     name: Run Prettier
     runs-on: ubuntu-latest
     steps:
       - uses: 'actions/checkout@v2'
-      - uses: oven-sh/setup-bun@v1
       - name: 'Install Dependencies'
-        run: bun install --frozen-lockfile
+        run: npm ci
       - name: 'Run Prettier'
-        run: bun run prettier:check
+        run: npm run prettier:check
   jest:
     name: Run test
     runs-on: ubuntu-latest
     steps:
       - uses: 'actions/checkout@v2'
-      - uses: oven-sh/setup-bun@v1
       - name: 'Install Dependencies'
-        run: bun install --frozen-lockfile
+        run: npm ci
       - name: 'Run build'
-        run: bun run build
+        run: npm run build
       - name: 'Run tests'
-        run: bun run test
+        run: npm run test
       - name: 'Run e2e'
-        run: bun run test:e2e
+        run: npm run test:e2e

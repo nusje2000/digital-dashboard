@@ -2,13 +2,12 @@
   "compilerOptions": {
     // Target and Modules
     "module": "ESNext",
-    "target": "ESNext",
+    "module": "commonjs",
     "moduleDetection": "force",
     "allowJs": true,
 
     // Modules
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
+    "moduleResolution": "node",
 
     // Generation
     "declaration": true,

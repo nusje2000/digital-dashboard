@@ -1,4 +1,3 @@
-import { test } from 'bun:test'
 import { Test, TestingModule } from '@nestjs/testing'
 import { AppModule } from './app.module'
 
