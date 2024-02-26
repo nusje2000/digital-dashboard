@@ -11,11 +11,12 @@
   "keywords": ["can", "typescript", "i2c", "raspberrypi"],
   "license": "MIT",
   "prettier": "@riotbyte/prettier-config",
-  "workspaces": ["apps/*"],
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "build": "turbo run build",
+    "build:packages": "turbo run build --filter=\"{./packages/*}...\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "prettier": "turbo run prettier",

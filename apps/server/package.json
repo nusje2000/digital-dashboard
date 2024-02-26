@@ -22,6 +22,7 @@
     "test:e2e": "bun test .e2e_spec.ts"
   },
   "dependencies": {
+    "@nusje2000/raspberry-api": "workspace:*",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
