@@ -1,0 +1,22 @@
+services:
+  workspace:
+    build: docker/bun
+    working_dir: /application
+    entrypoint: /application/docker/workspace/entrypoint.sh
+    volumes:
+      - ./:/application
+    healthcheck:
+      test: ps -C tail
+      interval: 10s
+      retries: 30
+  server:
+    build: docker/bun
+    volumes:
+      - ./:/application
+    ports:
+      - 3000:3000
+    working_dir: /application
+    entrypoint: /application/docker/server/entrypoint-dev.sh
+    depends_on:
+      workspace:
+        condition: service_healthy
