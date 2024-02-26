@@ -1,10 +1,9 @@
 {
   "name": "digital-dashboard-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Server for digital dashboard system",
+  "author": "Maarten Nusteling",
+  "license": "MIT",
   "prettier": "@riotbyte/prettier-config",
   "engines": {
     "bun": ">=1.0.0 <2.0.0"
