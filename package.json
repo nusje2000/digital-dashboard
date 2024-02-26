@@ -1,29 +1,29 @@
 {
   "name": "digital-dashboard",
   "version": "1.0.0",
+  "author": "Maarten Nusteling",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nusje2000/digital-dashboard.git"
+  },
   "description": "A digital dashboard system",
+  "homepage": "https://github.com/nusje2000/digital-dashboard#readme",
+  "keywords": ["can", "typescript", "i2c", "raspberrypi"],
+  "license": "MIT",
   "prettier": "@riotbyte/prettier-config",
+  "workspaces": ["apps/*"],
   "scripts": {
     "test": "turbo run test",
-    "test:e2e": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "prettier": "turbo run prettier",
     "prettier:check": "turbo run prettier:check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/nusje2000/digital-dashboard.git"
+  "engines": {
+    "bun": ">=1.0.0 <2.0.0"
   },
-  "keywords": ["can", "typescript", "i2c", "raspberrypi"],
-  "author": "Maarten Nusteling",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nusje2000/digital-dashboard/issues"
-  },
-  "homepage": "https://github.com/nusje2000/digital-dashboard#readme",
-  "workspaces": ["apps/*", "packages/*"],
   "devDependencies": {
     "@riotbyte/prettier-config": "^0.1.0",
     "eslint": "^8.44.0",
