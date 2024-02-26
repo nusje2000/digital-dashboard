@@ -1,21 +1,37 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    // Target and Modules
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleDetection": "force",
+    "allowJs": true,
+
+    // Modules
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+
+    // Generation
     "declaration": true,
     "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2021",
     "sourceMap": true,
     "baseUrl": "./",
     "incremental": true,
+
+    // Strict
+    "strict": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "noImplicitAny": true,
     "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": false
+
+    // Options
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
   }
 }
-
