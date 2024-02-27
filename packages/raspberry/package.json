@@ -24,8 +24,15 @@
     "prettier:check": "prettier --check ."
   },
   "devDependencies": {
-    "typescript": "^5.1.3",
     "@riotbyte/eslint-config": "^0.1.2",
-    "@riotbyte/prettier-config": "^0.1.0"
+    "@riotbyte/prettier-config": "^0.1.0",
+    "@types/node": "^20.11.20",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@types/i2c-bus": "^5.1.2",
+    "i2c-bus": "^5.2.3",
+    "oled-font-5x7": "^1.0.3",
+    "oled-i2c-bus": "^1.0.12"
   }
 }
