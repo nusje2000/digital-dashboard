@@ -1,7 +1,7 @@
 {
-  "name": "@nusje2000/raspberry-api",
+  "name": "@nusje2000/display-driver",
   "version": "0.0.1",
-  "description": "Library for using the raspberry pi (gpio, i2c, etc.)",
+  "description": "Library for connecting to displays",
   "contributors": [
     {
       "name": "Maarten Nusteling",

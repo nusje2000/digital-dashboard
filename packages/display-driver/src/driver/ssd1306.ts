@@ -1,6 +1,6 @@
 import { I2CBus, openSync } from 'i2c-bus'
-import { OledDriver, createDriver, defaultFont } from './oled-i2c-bus'
-import { Canvas, Color, Coordinate, Display, Pixel, Size } from './display'
+import { OledDriver, createDriver, defaultFont } from '../oled-i2c-bus'
+import { Canvas, Color, Coordinate, Display, Pixel, Size } from '../display'
 
 export type SSD1306Config = {
   width: number
