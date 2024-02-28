@@ -37,6 +37,7 @@ then
     progress "Installing node..."
     curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
     sudo apt-get install -y nodejs
+    source ~/.bashrc
     success "node has been installed"
 else
     success "node is already installed"
@@ -45,7 +46,7 @@ fi
 if [ -e "$INSTALLATION_PATH" ]; then
     success "project has already been cloned"
 else
-    git clone git@github.com:nusje2000/digital-dashboard.git "$INSTALLATION_PATH"
+    git clone https://github.com/nusje2000/digital-dashboard.git "$INSTALLATION_PATH"
 fi
 
 cd $INSTALLATION_PATH
