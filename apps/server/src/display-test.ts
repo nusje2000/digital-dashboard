@@ -1,4 +1,4 @@
-import { SSD1306Display } from '@nusje2000/raspberry-api'
+import { SSD1306Display } from '@nusje2000/display-driver'
 
 console.log('Creating display...')
 const display = new SSD1306Display({
