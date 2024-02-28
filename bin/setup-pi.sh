@@ -48,4 +48,8 @@ else
     git clone git@github.com:nusje2000/digital-dashboard.git "$INSTALLATION_PATH"
 fi
 
+cd $INSTALLATION_PATH
+npm install
+npm run build
+
 success "setup completed!"
