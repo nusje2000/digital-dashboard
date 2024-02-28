@@ -31,6 +31,7 @@ install_if_missing "git"
 install_if_missing "ca-certificates"
 install_if_missing "curl"
 install_if_missing "gnupg"
+install_if_missing "can-utils"
 
 if ! command -v node &> /dev/null
 then

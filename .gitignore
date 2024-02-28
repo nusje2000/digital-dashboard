@@ -2,3 +2,4 @@
 **/dist
 **/node_modules
 install.lock
+**/.env

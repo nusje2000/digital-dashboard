@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     // Target and Modules
-    "module": "ESNext",
     "module": "commonjs",
     "moduleDetection": "force",
     "allowJs": true,
+    "target": "es2021",
 
     // Modules
     "moduleResolution": "node",
