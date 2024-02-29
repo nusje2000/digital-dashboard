@@ -6,7 +6,7 @@ export type SSD1306Config = {
   width: number
   height: number
   address: number
-  bus?: number
+  bus?: I2CBus
 }
 
 export class SSD1306Canvas implements Canvas {
@@ -84,7 +84,7 @@ export class SSD1306Display implements Display {
     this.width = width
     this.height = height
 
-    this.i2c = openSync(bus ?? 1)
+    this.i2c = bus ?? openSync(1)
     this.oled = createDriver(this.i2c, {
       width,
       height,

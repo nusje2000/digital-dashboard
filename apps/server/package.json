@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nusje2000/canbus": "^0.0.1",
     "@nusje2000/display-driver": "*",
+    "i2c-bus": "^5.2.3",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "socketcan": "^4.0.4"
